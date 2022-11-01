@@ -43,6 +43,10 @@ section {
     grid-template-rows:  repeat(10, auto);
 }
 
+.type {
+    background-color: #354249;
+}
+
 .products {
     display: grid;
     grid-row: span 8;
@@ -53,8 +57,36 @@ section {
 }
 
 .product {
-    border: solid 0.1em rgb(179, 177, 177);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    /*border: solid 0.1em whitesmoke;*/
 }
+
+.product button {
+    padding: 0.8em 3em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    border: unset;
+    background-color: #354249;
+    color: whitesmoke;
+    border-radius: 0.2em;
+    letter-spacing: 0.1em;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease 0s;
+    font-family: 'DM Serif Text';
+    font-size: large;
+}
+
+.product button:hover {
+    background-color: #5a717e;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: x-large;
+    transform: translateY(-0.4em);
+  }
 
 .offer {
     border: solid 0.1em rgb(179, 177, 177);
@@ -79,4 +111,54 @@ section {
 .last-units .products .product {
     grid-row: span 2;
     
+}
+
+/**PRODUCTOS**/
+.p1 {
+    background-image: url("../img/jacket1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.p2 {
+    background-image: url("../img/jacket2.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.p3 {
+    background-image: url("../img/jacket3.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.p4 {
+    background-image: url("../img/jacket4.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.p5 {
+    background-image: url("../img/jacket5.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.p6 {
+    background-image: url("../img/jacket6.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.p7 {
+    background-image: url("../img/jacket7.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.p8 {
+    background-image: url("../img/jacket8.jpg");
+    background-size: cover;
+    background-position: center; 
 }
