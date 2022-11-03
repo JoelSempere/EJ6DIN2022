@@ -26,9 +26,15 @@
 }
 
 html {
-    height: 100%;
     font-family: 'CairoLight', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100%;
     overflow-x: hidden;
+}
+
+main {
+    width: inherit;
+    height: inherit;
 }
 
 body {
@@ -37,18 +43,70 @@ body {
     margin: 0;
 }
 
-main {
-    width: inherit;
-    height: inherit;
-}
-
-section.home-black{
+section.home-block{
     height: 100vh;
     min-height: 800px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: flex-end;
 }
 
-section {
-    /*border: solid;*/
+#sliderFirstBlock{
+    margin-left: 56px;
+    margin-bottom: 56px;
+}
+
+header{
+    color: var(--blue);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+header img{
+    cursor: pointer;
+}
+
+#logo{
+    margin-left: 56px;
+    font-family: 'Bodoni';
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 73px;
+    color: var(--blue);
+}
+
+header .icons{
+    margin-right: 56px;
+}
+
+ul.menu{
+    list-style: none;
+    padding-left: 0px;
+}
+header #navMain ul.menu{
+    font-size: 24px;
+}
+#navMain ul.menu li{
+    display: inline;
+    cursor: pointer;
+}
+#navMain ul.menu li+li{
+    margin-left: 30px;
+}
+
+.icons img+img{
+    margin-left: 30px;
+}
+
+#logo:visited{
+    color: var(--blue);
 }
 
 .s-sm {
@@ -156,6 +214,10 @@ section {
 
 img:hover {
     transform: translateY(-0.2em);
+}
+
+.home-block{
+    background-image: url("../img/glamorous-young-woman-in-summer-clothes-looking-at-camera-pretty-brunette-girl-in-sunglasses-isolated-on-textured-background\ 1.png");
 }
 
 .products {
@@ -370,15 +432,30 @@ h2 {
     font-size: larger;
     transform: translateY(-0.2em); 
 }
+p{
+    margin-top: 0px !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'DMSerif';
+    font-weight: normal;
+}
+
+.btn-primary{
+    background-color: var(--blue);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 40px;
+    font-size: 24px;
+}
 
 h1 {
-    font-family: 'DM Serif Text';
+    font-family: 'DMSerif';
     font-size: xx-large;
     margin-left: 20px;
 }
 
 p {
-    font-family: 'DM Serif Text';
     font-size: larger;
 }
 
@@ -539,4 +616,50 @@ p {
 .productOffers {
     display: contents;
     align-content: center;
+}
+
+#navMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#desplegable{
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 33px;
+    display: flex;
+}
+h1{
+    margin: 0px 0px 12px 0px;
+}
+#desplegable .title{
+    font-family: 'DMSerif';
+    letter-spacing: 6px;
+    font-size: 20px;
+}
+#sliderFirstBlock h1{
+    font-size: 48px;
+}
+#sliderFirstBlock p{
+    font-size: 32px;
+    max-width: 600px;
+}
+
+#desplegable a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#desplegable a:visited{
+    color: white;
+}
+
+#desplegable .column{
+    width: 200px;
 }
