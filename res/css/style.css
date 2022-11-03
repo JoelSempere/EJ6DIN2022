@@ -41,6 +41,11 @@ main {
     height: inherit;
 }
 
+section.home-black{
+    height: 100vh;
+    min-height: 800px;
+}
+
 section {
     /*border: solid;*/
 }
