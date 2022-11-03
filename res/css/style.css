@@ -6,8 +6,11 @@
     --beige2: #DDD5C8;
     --beigeClaro: #F1EDE1;
     --bannerColor: #dbdbdc;
+    --azulOscuro: #293338;
     --negro: #141414;
     --lightBrown: #a76a58;
+    --marronOscuro: #552C2C;
+    --grisOscuro: #404040;
 }
 
 @font-face {
@@ -637,29 +640,107 @@ p {
 h1{
     margin: 0px 0px 12px 0px;
 }
-#desplegable .title{
+footer{
+    padding: 30px 300px;
+    display: flex;
+}
+#desplegable .title, footer .title{
     font-family: 'DMSerif';
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     font-size: 20px;
 }
 #sliderFirstBlock h1{
     font-size: 48px;
+    line-height: 48px;
 }
 #sliderFirstBlock p{
     font-size: 32px;
+    line-height: 32px;
     max-width: 600px;
 }
 
-#desplegable a{
+#desplegable a, footer a{
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-#desplegable a:visited{
+#desplegable a:visited, footer a:visited{
     color: white;
 }
 
-#desplegable .column{
-    width: 200px;
+.review{
+    color: var(--blue);
+}
+.review .user{
+    margin-bottom: 30px;
+}
+.review p{
+    text-align: center;
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+#desplegable .column, footer .column{
+    width: 250px;
+}
+button{
+    font-family: 'CairoLight' !important;
+    color: var(--beige2);
+}
+footer .columns{
+    display: flex;
+}
+
+#logo_footer{
+    font-size: 48px;
+    line-height: 48px;
+    color: white;
+    font-family: 'Bodoni';
+}
+
+.product button{
+    font-family: 'DMSerif' !important;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 0px !important;
+}
+.product .btn-group button{
+    border-radius: 50% !important;
+}
+.newPrice{
+    background-color: var(--marronOscuro);
+}
+
+.productsOffer{
+    font-size: 15px !important;
+    padding: 0px !important;
+    background-color: var(--grisOscuro) !important;
+}
+footer{
+    background-color: var(--blue);
+    color: white;
+    font-family: 'CairoLight' !important;
+    justify-content: space-between;
+}
+
+#footer .column li{
+    font-size: 20px;
+}
+
+
+footer .column li img{
+    margin-right: 10px !important;
+}
+
+#paymentBar{
+    background-color: var(--azulOscuro);
+    color: #F1EDE1;
+    font-size: 14px;
+    font-family: 'CairoLight' !important;
+    padding: 20px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
