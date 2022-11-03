@@ -502,6 +502,10 @@ p {
     display: flex;
 }
 
+.review p {
+    text-align: center;
+}
+
 .review .user img {
     border-radius: 100%;
     border: 0.3em solid var(--blue);
