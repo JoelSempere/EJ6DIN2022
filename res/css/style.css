@@ -9,8 +9,24 @@
     --negro: #141414;
 }
 
+@font-face {
+    font-family: "Bodoni";
+    src: url("../fonts/Bodoni.ttf");
+}
+
+@font-face {
+    font-family: "CairoLight";
+    src: url("../fonts/CairoLight.ttf");
+}
+
+@font-face {
+    font-family: "DMSerif";
+    src: url("../fonts/DMSerif.ttf");
+}
+
 html {
     height: 100%;
+    font-family: 'CairoLight', Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 }
 
